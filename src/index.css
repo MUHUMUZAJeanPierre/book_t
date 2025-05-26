@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+[data-theme="dark"] {
+    background-color: #121212;
+    color: white;
+  }
+  
+  [data-theme="light"] {
+    background-color: white;
+    color: black;
+  }
+
+  .hero {
+    background-image: url("./assets/10001.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.hero #heading h3 {
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        background-position: center;
+        background-attachment: scroll; 
+        height: 100vh;
+        padding: 4rem 2rem;
+    }
+
+    .hero #heading {
+        text-align: center; 
+        width: 100%;
+    }
+
+    .hero #heading h3 {
+        font-size: 1.5rem; 
+    }
+
+    section {
+        padding-top: 4rem;
+    }
+
+    .nav-item {
+        font-size: 1.2rem;
+    }
+}
